@@ -1,0 +1,8 @@
+{"integrations":[
+    {
+        "Reference_Set_Name": "sampleips",
+        "Type": "ip",
+        "EventID": "81",
+        "Attribute": "ip-src"
+    }]
+}
