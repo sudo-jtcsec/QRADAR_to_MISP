@@ -61,7 +61,7 @@ def update_misp(misp,mapping,qrad_ip,api_token):
             misp.add_attribute(mapping["EventID"],attribute)
 
 def main():
-    confile = open("qrad.conf","r")
+    confile = open("servers.conf","r")
     for line in confile:
         if "QRAD_API_KEY" in line:
             api_token = line.strip().split('=')[1]
