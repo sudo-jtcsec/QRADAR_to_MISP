@@ -71,7 +71,7 @@ if checknew in no:
     else:
         print("Unable to loacte MISP event. Stop.")
         exit
-    a_type = input("Enter data type: ip-src|ip-dst|md5|url")
+    a_type = input("Enter data type: ip-src|ip-dst|md5|url : ")
     while a_type not in ["ip-src","ip-dst","md5","url"]:
         a_type = input("Enter data type: ip-src|ip-dst|md5|url : ")
     print("got all data")
@@ -87,3 +87,4 @@ jsonified["integrations"].append(eventdict)
 ints = open("integrations.json","w")
 json.dump(jsonified,ints)
 ints.close()
+
