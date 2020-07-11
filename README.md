@@ -10,4 +10,9 @@ After cloning the repository, update servers.conf with the appropriate addresses
 
 To set up an integration, run integration_adder.py which will walk you through addign the neccessarry information, validating it along the way
 
-After you have an integration setup, you can 
+After you have an integration setup, you can run QRADAR_to_MISP.py with several options:
+
+ - "-l" will display current integrations
+    * Use 'ALL' to show all integrations, or enter the UID of a specific integration
+ - "i" will sync the reference set data for the integrations requested with MISP
+    * Use 'ALL' to run all integrations, or enter the UID of a specific integration
