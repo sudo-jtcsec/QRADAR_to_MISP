@@ -3,6 +3,7 @@ Pull information from QRadar reference sets and add them ass attributes to an ev
 
 The main use case for this is leveraging QRadars ability to pull data from STIX/TAXII endpoints. QRadar will populate reference sets and then with this script we can pull that feed straight into MISP for corolation and easy searching
 
+integrations.json is the file that is created to record individual configurations. Its modular so adding a new one is easy and each can be individually called. The json file in this repository is an example and will probably break with most setups - delete it and run the integration adder script
 
 # Useage
 
